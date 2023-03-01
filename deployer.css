@@ -1,0 +1,43 @@
+#container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 21px;
+}
+
+input,
+textarea {
+  width: 98%;
+  padding: 11px;
+  margin-top: 7px;
+  margin-bottom: 17px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 17px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#cv {
+  margin-top: 53px;
+}

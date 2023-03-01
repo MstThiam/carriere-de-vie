@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carriere de vie (CV)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Carriere de Vie (CV)</h1>
+    <form>
+      
+        <input type="text" id="name" name="name">
+
+        <label for="firstname">Prenom:</label>
+        <input type="text" id="firstname" name="firstname">
+
+        <label for="date and place of birth">Date et lieu de naissance:</label>
+        <input type="text" id="date and place of birth" name="date and place of birth">
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="adress">Adresse:</label>
+        <input type="tel" id="address" name="adress">
+        
+        <label for="phone">Numero de Telephone:</label>
+        <input type="text" id="phone" name="phone">
+        
+        <label for="summary">Sommaire:</label>
+        <textarea id="summary" name="summary"></textarea>
+        
+        <label for="education">Education:</label>
+        <textarea id="education" name="education"></textarea>
+        
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience"></textarea>
+        
+        <button type="button" id="generate-btn">Generer</button>
+      </form>
+      
+      <div id="cv"></div>
+    </div>
+    
+    <script >
+      const generateBtn = document.getElementById('generate-btn');
+const cvContainer = document.getElementById('cv');
+
+generateBtn.addEventListener('click', () => {
+  const name = document.getElementById('name').value;
+  const firstname = document.getElementById('firstname').value;
+  const date and place of birth = document.getElementById('date and place of birth').value;
+  const email = document.getElementById('email').value;
+  const address = document.getElementById('address').value;
+  const phone = document.getElementById('phone').value;
+  const summary = document.getElementById('summary').value;
+  const education = document.getElementById('education').value;
+  const experience = document.getElementById('experience').value;
+  
+  const cvHTML = `
+    <h2>${name}</h2>
+    <p>${email} | ${phone} | ${address}</p>
+    
+    <h3>Sommaire</h3>
+    <p>${summary}</p>
+    
+    <h3>Education</h3>
+    <p>${education}</p>
+    
+    <h3>Experience</h3>
+    <p>${experience}</p>
+  `;
+  
+  cvContainer.innerHTML
+
+    </script>
+  </body>
+</html>
